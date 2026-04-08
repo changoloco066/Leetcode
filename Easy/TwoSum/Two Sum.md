@@ -113,6 +113,8 @@ Step 2: i = 1, nums[1] = 7
 └──────────────────────────────────┘
 Answer: [0, 1] because nums[0] + nums[1] = 2 + 7 = 9
 
+```
+
 **Input:** nums = [3, 2, 4], target = 6
 Step 1: i = 0, nums[0] = 3
 HashMap: { 3: 0 }  ← Store "need 3 to pair with index 0"
