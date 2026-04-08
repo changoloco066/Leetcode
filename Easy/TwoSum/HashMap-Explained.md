@@ -180,7 +180,7 @@ HashMap approach:
    Map<Integer, Boolean> seen = new HashMap<>();
 ```
 
-### ❌ Bad Use Cases
+###  Bad Use Cases
 
 1. **Maintaining order** - Use `LinkedHashMap` instead
 2. **Sorting** - HashMap doesn't maintain sorted order
