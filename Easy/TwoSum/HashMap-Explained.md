@@ -3,9 +3,11 @@
 ## What is a HashMap?
 
 A HashMap is a data structure that stores **key-value pairs** and provides **O(1) average lookup time**. Think of it like a real-world dictionary where you look up a word (key) to find its definition (value).
-```text
+
 ### Visual Representation
 HashMap Structure:
+
+```text
 ┌─────────┬─────────┐
 │   Key   │  Value  │
 ├─────────┼─────────┤
@@ -251,10 +253,10 @@ for(int num : nums){
 ## Summary
 
 **HashMap is perfect when you need:**
-- ✅ Fast lookups by key
-- ✅ Fast insertions
-- ✅ Fast deletions
-- ✅ Unique keys
+- Fast lookups by key
+- Fast insertions
+- Fast deletions
+- Unique keys
 
 **Trade-off:**
 - Uses extra memory
