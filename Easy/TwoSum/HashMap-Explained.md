@@ -3,7 +3,7 @@
 ## What is a HashMap?
 
 A HashMap is a data structure that stores **key-value pairs** and provides **O(1) average lookup time**. Think of it like a real-world dictionary where you look up a word (key) to find its definition (value).
-
+```text
 ### Visual Representation
 HashMap Structure:
 ┌─────────┬─────────┐
@@ -13,6 +13,7 @@ HashMap Structure:
 │   "b"   │    2    │
 │   "c"   │    3    │
 └─────────┴─────────┘
+```
 
 In Java:
 ```java
@@ -80,7 +81,7 @@ Input: put("apple", 5)
 Calculate hash: "apple" → 93029210
 Calculate index: 93029210 % 16 = 10
 Store at index 10:
-
+``` text
 Internal Array:
 ┌────┬─────────────┐
 │  0 │   null      │
@@ -92,6 +93,7 @@ Internal Array:
 │... │   ...       │
 │ 15 │   null      │
 └────┴─────────────┘
+```
 
 ---
 
@@ -103,6 +105,7 @@ Sometimes different keys produce the same index. HashMap handles this with **cha
 put("apple", 5)  → hash % 16 = 10
 put("banana", 3) → hash % 16 = 10  (collision!)
 Internal structure at index 10:
+```text
 ┌───────────────────────────────┐
 │ Index 10:                     │
 │ ┌─────────┐   ┌──────────┐    │
@@ -110,6 +113,7 @@ Internal structure at index 10:
 │ └─────────┘   └──────────┘    │
 │   (Linked list of entries)    │
 └───────────────────────────────┘
+```
 
 When you do `get("banana")`:
 1. Calculate hash → index 10
