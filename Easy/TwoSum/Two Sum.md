@@ -31,17 +31,21 @@ The solution uses two nested loops to check all possible pairs of numbers in the
 
 The reason j starts at i+1 is crucial: it avoids checking the same pair twice (like [0,1] and [1,0]), prevents using the same element twice, and ensures we only check pairs where j > i, making the algorithm more efficient.
 
-### Code
+### Code (Copy-paste into LeetCode)
 ```java
-public int[] twoSum(int[] nums, int target) {
-    for (int i = 0; i < nums.length; i++){
-        for (int j = i + 1; j < nums.length; j++){
-            if (nums[i] + nums[j] == target)
-                return new int[]{i, j};
+
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        for (int i = 0; i < nums.length; i++){        
+
+            for (int j = i + 1; j < nums.length; j++ ){   
+                if (nums[i] + nums[j] == target)
+                    return new int [] {i, j};            
+            }                  
         }
+        return nums;
     }
-    return nums; // No solution found
-}
+    
 ```
 
 ### Complexity Analysis
@@ -134,32 +138,26 @@ Time: O(n)
 
 The HashMap acts like a **memory** of all the numbers we've seen and what they're waiting for.
 
-### Code
+### Code (Copy-paste into LeetCode)
 ```java
 import java.util.Map;
 import java.util.HashMap;
 
-public int[] twoSumHashMap(int[] nums, int target){
-    // Create empty HashMap to store: (complement → index)
-    Map<Integer, Integer> complements = new HashMap<>();
-    
-    // Iterate through each number once
-    for(int i = 0; i < nums.length; i++){
-        // Check if current number is someone's complement
-        Integer complementIndex = complements.get(nums[i]); 
-        
-        if(complementIndex != null){
-            // Found it! Return both indices
-            return new int[]{complementIndex, i};
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        Map<Integer, Integer> complements = new HashMap<>();
+
+        for (int i = 0; i < nums.length; i++) {
+            Integer complementIndex = complements.get(nums[i]);
+            if (complementIndex != null) {
+                return new int[]{i, complementIndex};
+            }
+
+            complements.put(target - nums[i], i);
         }
         
-        // Store what complement we need for current number
-        // Key: the number we're looking for
-        // Value: current index
-        complements.put(target - nums[i], i);
+        return nums;
     }
-    
-    return nums; // No solution found
 }
 ```
 
