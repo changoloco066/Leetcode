@@ -84,7 +84,7 @@ We use the HashMap to store **complements** (the number we're looking for) as we
 Here's how it works step by step: as we visit each number, we calculate what its complement should be (target - current number), then check if the current number is someone else's complement (by looking it up in the HashMap). If found, we have our answer. If not, we store our complement for future iterations to find.
 
 ### Visual Example
-
+```text
 **Input:** nums = [2, 7, 11, 15], target = 9
 Step 1: i = 0, nums[0] = 2
 ┌──────────────────────────────────┐
@@ -182,7 +182,7 @@ class Solution {
 | Space Complexity | O(1) | O(n) |
 | Array size: 1,000 | ~500,000 comparisons | ~1,000 comparisons |
 | Array size: 10,000 | ~50,000,000 operations | ~10,000 operations |
-| Speedup | - | **5,000x faster!** ⚡ |
+| Speedup | - | **5,000x faster!**  |
 
 ### Trade-off
 - **Brute Force:** Slower but uses no extra memory
