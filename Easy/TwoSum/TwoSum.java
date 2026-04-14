@@ -1,16 +1,27 @@
 package TwoSum;
-public class TwoSum {
-    public int[] twoSum(int[] nums, int target) {
-        for (int i = 0; i < nums.length; i++){        // starts in the first number of the array 
+import java.util.HashMap; 
+import java.util.Map;
 
-            for (int j = i + 1; j < nums.length; j++ ){   // starts in the second number of the array
-                if (nums[i] + nums[j] == target)
-                    return new int [] {i, j};            //New array 'int' with the values of i and j
-            }                  
+public class TwoSum {
+     // HashMap store (complement -> index)
+    public int[] twoSum(int[] nums, int target){
+
+        Map<Integer,Integer> complements = new HashMap<>();
+        // Iterate throught each number once 
+        for(int i = 0; i < nums.length; i++ ){
+            //Check if current number is someone's complement
+            Integer complementIndex = complements.get(nums[i]); 
+            if(complementIndex != null){
+                // Found it, Return both indices
+                return new int[]{i, complementIndex};
+            }
+            // Store what complement we need for current number 
+            // Key: the current number we're looking for 
+            // Value: current index
+            complements.put(target - nums[i], i);
         }
-        return nums;
-    }
-    
+        return nums;  
+    } 
     // Main Method to test the solution 
     public static void main(String[] args) {
         TwoSum solution = new TwoSum();
@@ -34,19 +45,3 @@ public class TwoSum {
         System.out.println("Test 3: [" + result3[0] + ", " + result3[1] + "]"); // Expected: [0, 1]
     }
 }
-
-/* Copy paste for leetcode 
-
-class Solution {
-    public int[] twoSum(int[] nums, int target) {
-        for (int i = 0; i < nums.length; i++){        
-
-            for (int j = i + 1; j < nums.length; j++ ){   
-                if (nums[i] + nums[j] == target)
-                    return new int [] {i, j};            
-            }                  
-        }
-        return nums;
-    }
-    
-*/
