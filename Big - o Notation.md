@@ -73,21 +73,4 @@ Fast                                                   Slow
 
 ## Visual Comparison
 
-
-Operations (y-axis)
-│
-│                                                    O(n!)
-│                                                   /
-│                                              O(2ⁿ)
-│                                             /
-10⁶ │                                    O(n²)  /
-│                                   /      /
-│                          O(n log n)    /
-│                         /            /
-10⁴ │                O(n)   /           /
-│               /      /          /
-│      O(log n)/     /         /
-│          /  /    /        /
-│  O(1) ─────────────────────────────────────
-│________________________________________________
-1      10      100     1000    10000    → Input size (n)
+![Texto](https://www.savemyexams.com/a-level/computer-science/ocr/17/revision-notes/8-algorithms/8-1-algorithms/big-o-notation/)
