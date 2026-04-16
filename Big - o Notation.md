@@ -73,4 +73,4 @@ Fast                                                   Slow
 
 ## Visual Comparison
 
-![Texto](https://www.savemyexams.com/a-level/computer-science/ocr/17/revision-notes/8-algorithms/8-1-algorithms/big-o-notation/)
+![](assets/img/Graph.png)
