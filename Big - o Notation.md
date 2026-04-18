@@ -74,3 +74,75 @@ Fast                                                   Slow
 ## Visual Comparison
 
 ![](assets/img/Graph.png)
+
+## Detailed Explanations
+
+### O(1) - Constant Time
+
+**Definition:** Algorithm takes the same time regardless of input size.
+
+**Real-world analogy:** Getting a book from a specific shelf. Whether the library has 100 or 1,000,000 books, if you know the shelf number, it takes the same time.
+
+**When to use:**
+- Direct access to data (arrays, hash maps)
+- Mathematical formulas
+- Returning cached results
+
+
+### O(log n) - Logarithmic Time
+
+**Definition:** Algorithm cuts the problem in half each step.
+
+**Real-world analogy:** Finding a word in a dictionary. You open to the middle, see if your word comes before or after, then only search that half. Repeat.
+
+**When to use:**
+- Searching in sorted data
+- Divide and conquer algorithms
+- Tree operations (balanced trees)
+
+### O(n) - Linear Time
+
+**Definition:** Algorithm processes each element once.
+
+**Real-world analogy:** Reading a book. If it has 100 pages, it takes 100 units of time. If 200 pages, takes 200 units.
+
+**When to use:**
+- Need to check every element
+- Linear search
+- Simple array/list operations
+
+### O(n log n) - Linearithmic Time
+
+**Definition:** Algorithm performs O(log n) work for each of n elements.
+
+**Real-world analogy:** Organizing a deck of cards using merge sort. You split the deck (log n times), then merge everything back together (n work per level).
+
+**When to use:**
+- Efficient sorting (Merge Sort, Quick Sort, Heap Sort)
+- Most optimal comparison-based sorting
+
+### O(n²) - Quadratic Time
+
+**Definition:** Nested loops where each loop runs n times.
+
+**Real-world analogy:** Checking every person against every other person for common friends. For 10 people, that's 100 comparisons. For 100 people, that's 10,000!
+
+**When to use:**
+- Small datasets only
+- When simplicity matters more than efficiency
+- Sometimes unavoidable (comparing all pairs)
+
+**Key insight:** Try to avoid if possible! Often can be optimized to O(n) or O(n log n).
+
+### O(n!) - Factorial Time
+
+**Definition:** Number of operations is the factorial of input size.
+
+**Real-world analogy:** Trying every possible seating arrangement for dinner guests. For 3 guests: 6 arrangements. For 10 guests: 3,628,800 arrangements!
+
+**When to use:**
+- Traveling Salesman Problem (brute force)
+- Generating all permutations
+- Almost never in production!
+
+**Key insight:** Only works for very small inputs (n < 10).
