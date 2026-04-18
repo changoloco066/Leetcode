@@ -100,6 +100,10 @@ Fast                                                   Slow
 - Divide and conquer algorithms
 - Tree operations (balanced trees)
 
+**Key insight:** Extremely efficient for large datasets!
+
+---
+
 ### O(n) - Linear Time
 
 **Definition:** Algorithm processes each element once.
