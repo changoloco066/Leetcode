@@ -51,7 +51,7 @@ Think of it like fuel efficiency for cars:
 
 ## Common Time Complexities
 
-### Quick Reference Table (**fastest** to **slowest**:)
+### Quick Reference Table (fastest to slowest )
 
 | Notation | Name | Example Operation | When Input Doubles |
 |----------|------|-------------------|-------------------|
