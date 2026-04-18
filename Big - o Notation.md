@@ -51,7 +51,7 @@ Think of it like fuel efficiency for cars:
 
 ## Common Time Complexities
 
-### Quick Reference Table (fastest to slowest )
+### Quick Reference Table ( fastest to slowest )
 
 | Notation | Name | Example Operation | When Input Doubles |
 |----------|------|-------------------|-------------------|
@@ -95,7 +95,7 @@ Think of it like fuel efficiency for cars:
 - Divide and conquer algorithms
 - Tree operations (balanced trees)
 
-**Key insight:** Extremely efficient for large datasets!
+**Advice:** Extremely efficient for large datasets!
 
 ---
 
@@ -135,7 +135,7 @@ Think of it like fuel efficiency for cars:
 - When simplicity matters more than efficiency
 - Sometimes unavoidable (comparing all pairs)
 
-**Key insight:** Try to avoid if possible! Often can be optimized to O(n) or O(n log n).
+**Advice:** Try to avoid if possible! Often can be optimized to O(n) or O(n log n).
 
 ---
 
@@ -150,4 +150,4 @@ Think of it like fuel efficiency for cars:
 - Generating all permutations
 - Almost never in production!
 
-**Key insight:** Only works for very small inputs (n < 10).
+**Advice:** Only works for very small inputs (n < 10).
