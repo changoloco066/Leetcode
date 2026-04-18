@@ -88,6 +88,7 @@ Fast                                                   Slow
 - Mathematical formulas
 - Returning cached results
 
+---
 
 ### O(log n) - Logarithmic Time
 
@@ -115,6 +116,8 @@ Fast                                                   Slow
 - Linear search
 - Simple array/list operations
 
+---
+
 ### O(n log n) - Linearithmic Time
 
 **Definition:** Algorithm performs O(log n) work for each of n elements.
@@ -124,6 +127,8 @@ Fast                                                   Slow
 **When to use:**
 - Efficient sorting (Merge Sort, Quick Sort, Heap Sort)
 - Most optimal comparison-based sorting
+
+---
 
 ### O(n²) - Quadratic Time
 
@@ -137,6 +142,8 @@ Fast                                                   Slow
 - Sometimes unavoidable (comparing all pairs)
 
 **Key insight:** Try to avoid if possible! Often can be optimized to O(n) or O(n log n).
+
+---
 
 ### O(n!) - Factorial Time
 
