@@ -51,12 +51,7 @@ Think of it like fuel efficiency for cars:
 
 ## Common Time Complexities
 
-From **fastest** to **slowest**:
-
-O(1) | O(log n) | O(n) | O(n log n) | O(n²) | O(2ⁿ) | O(n!)
-
-
-### Quick Reference Table
+### Quick Reference Table (**fastest** to **slowest**:)
 
 | Notation | Name | Example Operation | When Input Doubles |
 |----------|------|-------------------|-------------------|
