@@ -54,5 +54,3 @@ class Solution {
 - **Space:** O(1) - no extra data structures
 
 ---
-
-**Input:** `"abcabcd"`
