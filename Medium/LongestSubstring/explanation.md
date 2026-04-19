@@ -15,7 +15,21 @@ Given a string `s`, find the length of the longest substring without repeating c
 ### Algorithm
 
 This solution uses the **sliding window technique** with two pointers (`left` and `right`). As we expand the window by moving `right`, we use `indexOf(char, left)` to check if the current character already exists in our current window. If we find a duplicate (when `index != right`), we move `left` to one position after the duplicate. After each step, we calculate the window size and update the maximum length.
+```
+[a] b c a b c d          → maxLength = 1
+[a b] c a b c d          → maxLength = 2
+[a b c] a b c d          → maxLength = 3
+[a b c a] b c d          → duplicate 'a'! left moves to index 1
+a [b c a] b c d          → maxLength = 3, right keeps moving
+a [b c a b] c d          → duplicate 'b'! left moves to index 2
+a b [c a b] c d          → maxLength = 3, right keeps moving
+a b [c a b c] d          → duplicate 'c'! left moves to index 3
+a b c [a b c] d          → maxLength = 3, right keeps moving
+a b c [a b c d]          → maxLength = 4
 
+Final Answer: 4 (substring "abcd")
+
+```
 ### Code
 ```java
 class Solution {
@@ -41,6 +55,4 @@ class Solution {
 
 ---
 
-## Visual Example
-
-**Input:** `s = "abcabcbb"`
+**Input:** `"abcabcd"`
