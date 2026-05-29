@@ -18,9 +18,9 @@
 ## 📖 About This Repository
 
 This repository contains my solutions to LeetCode problems. Each solution includes:
-- ✅ Clean, well-commented code
-- 📝 Detailed explanations and approach
-- ⚡ Time and space complexity analysis
-- 🎯 Multiple solution approaches when applicable
-- 🧪 Test cases with main method for local execution
+-  Clean, well-commented code
+-  Detailed explanations and approach
+-  Time and space complexity analysis
+-  Multiple solution approaches when applicable
+-  Test cases with main method for local execution
 
