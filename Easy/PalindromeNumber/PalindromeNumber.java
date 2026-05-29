@@ -1,3 +1,5 @@
+package Easy.PalindromeNumber;
+
 public class PalindromeNumber {
     
     // LeetCode solution
